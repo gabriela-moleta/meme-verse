@@ -34,6 +34,5 @@ O MemeVerse é uma plataforma de compartilhamento de memes desenvolvida com Next
 
 - CSS Modules para estilização
 
-- JavaScript
 
 
