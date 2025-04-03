@@ -98,7 +98,16 @@ export default function Home() {
     },
   ];
 
-  
+  // Categorias de memes
+  const categories = [
+    { id: 1, name: "Programação", icon: "💻", count: 478 },
+    { id: 2, name: "Escola", icon: "📚", count: 325 },
+    { id: 3, name: "Trabalho", icon: "💼", count: 642 },
+    { id: 4, name: "Games", icon: "🎮", count: 513 },
+    { id: 5, name: "Relacionamentos", icon: "❤️", count: 287 },
+    { id: 6, name: "Esportes", icon: "⚽", count: 195 },
+  ];
+
   // Memes em destaque
   const featuredMemes = [
     {
@@ -145,11 +154,63 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-     
+      {/* COMPONENTE: Header */}
+      <header className={styles.header}>
+        <div className={styles.logo}>
+          <h1>MemeVerse</h1>
+          <span>🌟</span>
+        </div>
+        <nav className={styles.nav}>
+          <a href="#" className={styles.active}>
+            Home
+          </a>
+          <a href="#">Trending</a>
+          <a href="#">Create</a>
+          <a href="#">Categories</a>
+          <a href="#">Profile</a>
+        </nav>
+
+        <div className={styles.userActions}>
+          <button className={styles.notificationBtn}>🔔</button>
+          <button className={styles.userAvatar}>
+            <img src="https://i.pravatar.cc/150?img=3" alt="Your profile" />
+          </button>
+        </div>
+      </header>
+      {/* FIM COMPONENTE: Header */}
 
       <div className={styles.mainContent}>
         <div className={styles.contentArea}>
-          
+          {/* COMPONENTE: HeroSection */}
+          <section className={styles.heroSection}>
+            <div className={styles.heroContent}>
+              <span className={styles.heroTag}>Meme do Dia</span>
+              <h2 className={styles.heroTitle}>{memeOfTheDay.title}</h2>
+              <p className={styles.heroDescription}>
+                {memeOfTheDay.description}
+              </p>
+              <div className={styles.heroAuthor}>
+                <img
+                  src={memeOfTheDay.authorAvatar}
+                  alt={memeOfTheDay.author}
+                />
+                <span>Por {memeOfTheDay.author}</span>
+              </div>
+              <div className={styles.heroStats}>
+                <span>❤️ {memeOfTheDay.likes}</span>
+                <span>💬 {memeOfTheDay.comments}</span>
+              </div>
+              <button className={styles.heroButton}>Ver meme completo</button>
+            </div>
+            <div className={styles.heroImageContainer}>
+              <img
+                src={memeOfTheDay.image}
+                alt={memeOfTheDay.title}
+                className={styles.heroImage}
+              />
+            </div>
+          </section>
+          {/* FIM COMPONENTE: HeroSection */}
 
           {/* COMPONENTE: CategoriesSection */}
           <section className={styles.categoriesSection}>
