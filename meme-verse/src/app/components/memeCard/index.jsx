@@ -19,35 +19,15 @@ const MemeCard = () => {
               <h3 className={styles.memeTitle}>{meme.title}</h3>
               <p className={styles.memeDescription}>{meme.description}</p>
 
-              {/* COMPONENTE: InteractionBar */}
-              <div className={styles.interactionBar}>
-                <div className={styles.interactionButton}>
-                  <span>👍</span>
-                  <span>{meme.likes}</span>
-                </div>
-                <div className={styles.interactionButton}>
-                  <span>💬</span>
-                  <span>{meme.comments}</span>
-                </div>
-                <div className={styles.interactionButton}>
-                  <span>🔄</span>
-                  <span>Share</span>
-                </div>
-                <div className={styles.interactionButton}>
-                  <span>🔖</span>
-                  <span>Save</span>
-                </div>
               </div>
-              {/* FIM COMPONENTE: InteractionBar */}
-            </div>
-          </div>
-          // FIM COMPONENTE: MemeCard
-        )}
+              </div>
+        );
+    }
     
 
   export default MemeCard;
 
-  const memes = [
+  const meme = [
     {
       id: 1,
       title: "Programador às 3 da manhã",

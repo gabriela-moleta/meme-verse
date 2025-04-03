@@ -1,16 +1,16 @@
 import styles from './interactionBar.module.css';
 
-const InteractionBar = ({ meme }) => {
+const InteractionBar = ({ likes, comments }) => {
     return (
     
         <div className={styles.interactionBar}>
         <div className={styles.interactionButton}>
           <span>👍</span>
-          <span>{meme.likes}</span>
+          <span>{likes}</span>
         </div>
         <div className={styles.interactionButton}>
           <span>💬</span>
-          <span>{meme.comments}</span>
+          <span>{comments}</span>
         </div>
         <div className={styles.interactionButton}>
           <span>🔄</span>

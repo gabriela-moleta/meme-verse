@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## MemeVerse - Plataforma de Compartilhamento de Memes
+ 
+ ## Visão Geral
+O MemeVerse é uma plataforma de compartilhamento de memes desenvolvida com Next.js 15, focada em componentização e reutilização de código através de props. Este projeto foi criado como parte de uma atividade avaliativa para demonstrar habilidades em desenvolvimento frontend com frameworks modernos.
 
-## Getting Started
+## Funcionalidades Principais
+- Exibição do "Meme do Dia" em destaque
 
-First, run the development server:
+- Cards de memes reutilizáveis com interações
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Navegação por categorias
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Sistema de curtidas e comentários
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Layout responsivo para diversos dispositivos
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Componentes Implementados
+- Header: Cabeçalho com logo, navegação e busca
 
-## Learn More
+- HeroSection: Seção principal com o meme do dia
 
-To learn more about Next.js, take a look at the following resources:
+- MemeCard: Card reutilizável para exibição de memes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- InteractionBar: Barra de interações (curtir, comentar)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- CategoriesSection: Seção de navegação por categorias
 
-## Deploy on Vercel
+- Footer: Rodapé com links e informações
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Sidebar: Barra lateral com conteúdo complementar
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tecnologias Utilizadas
+- Next.js 15 (App Router)
+
+- CSS Modules para estilização
+
+- JavaScript
+
+
